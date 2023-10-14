@@ -80,7 +80,7 @@ const errorMiddleware = (err, req, res, next) => {
     }
 
     console.log('FROM MIDDLEWARE ------------------------', err)
-    res.status(statusCode).json(errorResponseJSON({
+    res?.status(statusCode).json(errorResponseJSON({
         statusCode,
         title: 'Server Error',
         type: 'SERVER_ERROR',

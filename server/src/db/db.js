@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import config from '../config/config.js';
-const mongoUri = config.mongodb.uri || 'mongodb+srv://giang:giangvippro@cluster0.pffyt.mongodb.net/mongodb://localhost:27017';
+const mongoUri = config.mongodb.uri || 'mongodb://localhost:27017';
 const dbName = config.mongodb.dbName || 'foodie';
 
 if (config.server.env === 'dev') {
